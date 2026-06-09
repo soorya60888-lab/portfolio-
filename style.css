@@ -1,0 +1,70 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f7fb;
+    margin:0;
+    padding:0;
+    color:#333;
+}
+
+section{
+    padding:30px;
+}
+
+h1{
+    font-size:48px;
+    color:#1e3a8a;
+}
+
+h2{
+    color:#2563eb;
+}
+
+ul{
+    line-height:1.8;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:#ddd;
+    margin:20px 0;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+    color:white;
+}
+
+.hero h1{
+    color:white;
+    font-size:50px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.hero button{
+    margin-top:20px;
+}
+.project-card{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
