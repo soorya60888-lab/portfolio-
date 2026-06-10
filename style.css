@@ -491,3 +491,85 @@ body {
     font-size: 0.85rem;
     opacity: 0.9;
 }
+/* ========================================== */
+/* NEW BLOG SECTION LAYOUT USING CSS GRID     */
+/* ========================================== */
+.blog-section {
+    margin-bottom: 50px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Formats a clean single column on mobile */
+    gap: 16px;
+}
+
+.blog-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow-subtle);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-card:active {
+    transform: scale(0.99);
+}
+
+.blog-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.blog-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.blog-tag {
+    font-size: 0.75rem;
+    background: #f2f2f7;
+    color: var(--text-muted);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* Adjusts tags automatically when you flip the switch to dark mode */
+body.dark-mode .blog-tag {
+    background: #1e293b;
+    color: #f8fafc;
+}
+
+.blog-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Strictly limits paragraph excerpts to 2 lines max for assignment criteria */
+.blog-card p {
+    margin: 0 0 16px 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.read-more {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--accent-orange);
+    text-decoration: none;
+    margin-top: auto;
+}
