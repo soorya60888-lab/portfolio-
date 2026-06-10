@@ -92,3 +92,14 @@ ul li {
 hr {
     display: none;
 }
+/* Profile Image Setup */
+.profile-img {
+    width: 140px;          /* Sets a neat size on mobile screens */
+    height: 140px;
+    border-radius: 50%;    /* Turns the square photo into a perfect circle */
+    object-fit: cover;     /* Crops the image perfectly without stretching it */
+    border: 3px solid #38bdf8; /* Adds your signature electric blue ring */
+    margin: 0 auto 15px auto;  /* Centers the image and adds spacing below it */
+    display: block;
+}
+
