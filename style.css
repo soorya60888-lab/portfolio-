@@ -5,6 +5,9 @@ body {
     color: #f8fafc; /* Crisp white text */
     max-width: 750px;
     margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0 20px;
     line-height: 1.6;
 }
