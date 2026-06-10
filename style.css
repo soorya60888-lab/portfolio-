@@ -1,20 +1,45 @@
-/* Dark Tech Theme */
+/* Base Page & Layout Setup */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #0f172a; /* Deep slate background */
     color: #f8fafc; /* Crisp white text */
-    max-width: 750px;
-    margin: 40px auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the entire website on the screen */
+}
+
+/* Container to wrap and center everything cleanly */
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* Hero configuration to center your top profile elements */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 20px;
-    line-height: 1.6;
+    align-items: center; /* Keeps photo, name, and button perfectly centered */
+}
+
+/* Profile Image Setup */
+.profile-img {
+    width: 140px;          /* Forces a set size so it stops stretching */
+    height: 140px;
+    border-radius: 50%;    /* Turns your photo into a perfect circle */
+    object-fit: cover;     /* Crops the image perfectly without stretching */
+    border: 3px solid #38bdf8; /* Your signature electric blue ring */
+    margin-bottom: 15px;  
+    display: block;
 }
 
 /* Customizing Headings */
 h1 {
-    color: #38bdf8; /* Bright electric blue */
+    color: #38bdf8; 
     font-size: 2.5rem;
     margin-bottom: 5px;
 }
@@ -88,18 +113,9 @@ ul li {
     font-size: 0.9rem;
 }
 
-/* Remove old horizontal lines since we use border-bottom now */
+/* Hide old horizontal lines */
 hr {
     display: none;
 }
-/* Profile Image Setup */
-.profile-img {
-    width: 140px;          /* Sets a neat size on mobile screens */
-    height: 140px;
-    border-radius: 50%;    /* Turns the square photo into a perfect circle */
-    object-fit: cover;     /* Crops the image perfectly without stretching it */
-    border: 3px solid #38bdf8; /* Adds your signature electric blue ring */
-    margin: 0 auto 15px auto;  /* Centers the image and adds spacing below it */
-    display: block;
-}
+
 
