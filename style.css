@@ -1,70 +1,91 @@
-body{
-    font-family: Arial, sans-serif;
-    background:#f4f7fb;
-    margin:0;
-    padding:0;
-    color:#333;
+/* Dark Tech Theme */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0f172a; /* Deep slate background */
+    color: #f8fafc; /* Crisp white text */
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
 }
 
-section{
-    padding:30px;
+/* Customizing Headings */
+h1 {
+    color: #38bdf8; /* Bright electric blue */
+    font-size: 2.5rem;
+    margin-bottom: 5px;
 }
 
-h1{
-    font-size:48px;
-    color:#1e3a8a;
+h2 {
+    color: #38bdf8;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 5px;
+    margin-top: 30px;
 }
 
-h2{
-    color:#2563eb;
+/* Sleek Project Cards */
+.project-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    transition: transform 0.2s, border-color 0.2s;
 }
 
-ul{
-    line-height:1.8;
+.project-card:hover {
+    transform: translateY(-2px);
+    border-color: #38bdf8;
 }
 
-hr{
-    border:none;
-    height:1px;
-    background:#ddd;
-    margin:20px 0;
+.project-card h3 {
+    margin: 0 0 5px 0;
+    color: #e2e8f0;
 }
 
-button{
-    background:#2563eb;
-    color:white;
-    border:none;
-    padding:12px 20px;
-    border-radius:8px;
-    font-size:16px;
+/* Styling the buttons */
+button {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
-button:hover{
-    opacity:0.9;
-}
-.hero{
-    text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(135deg,#2563eb,#60a5fa);
-    color:white;
+button:hover {
+    background-color: #7dd3fc;
 }
 
-.hero h1{
-    color:white;
-    font-size:50px;
+/* Style for your JS message output */
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #4ade80; /* Success green */
+    transition: all 0.3s ease;
 }
 
-.hero p{
-    font-size:20px;
+/* Clean list for skills */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.hero button{
-    margin-top:20px;
+ul li {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.9rem;
 }
-.project-card{
-    background:white;
-    padding:20px;
-    margin:15px 0;
-    border-radius:12px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+
+/* Remove old horizontal lines since we use border-bottom now */
+hr {
+    display: none;
 }
